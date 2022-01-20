@@ -1,0 +1,19 @@
+{
+  "name": "britians-got-talent-contact-edition",
+  "version": "1.0.0",
+  "description": "This is the github repo for my technical assignment provided by Contact.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dylson14/Britians-Got-Talent-Contact-Edition.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dylson14/Britians-Got-Talent-Contact-Edition/issues"
+  },
+  "homepage": "https://github.com/Dylson14/Britians-Got-Talent-Contact-Edition#readme"
+}
