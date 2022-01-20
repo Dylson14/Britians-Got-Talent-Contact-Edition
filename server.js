@@ -1,4 +1,4 @@
-const inquirer = require("inquier");
+const inquirer = require("inquirer");
 const menuPrompt = require("./Prompts/menuPrompt");
 const connectDB = require("./connection")
 
