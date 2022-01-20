@@ -2,7 +2,7 @@ const menuPrompt = [{
     type: "input",
     name: "locationInput",
     message:"Choose a location for your talent",
-    default:"Springfield"
+    default:"Springfield",
 }]
 
-module.exports = menuPrompt
+module.exports = menuPrompt;
