@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Dylson14/Britians-Got-Talent-Contact-Edition/issues"
   },
-  "homepage": "https://github.com/Dylson14/Britians-Got-Talent-Contact-Edition#readme"
+  "homepage": "https://github.com/Dylson14/Britians-Got-Talent-Contact-Edition#readme",
+  "dependencies": {
+    "inquirer": "^8.2.0"
+  }
 }
