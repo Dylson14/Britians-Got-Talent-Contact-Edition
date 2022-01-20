@@ -1,3 +1,4 @@
+const db = require("../connection");
 
 const showData = () => {
         db.query("SELECT * from employee", function (err, results){
