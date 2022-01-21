@@ -9,7 +9,7 @@ const Start = () => {
     .then((answers) => {
 
         console.log(answers);
-        showData();
+        // showData();
         showLocation(answers);
 
 
