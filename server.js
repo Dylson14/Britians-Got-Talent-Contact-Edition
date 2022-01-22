@@ -8,6 +8,7 @@ const Start = () => {
     inquirer.prompt(menuPrompt)
     .then((answers) => {
 
+        // using trims and toLowerCase method.
         console.log(answers);
         // showData();
         showLocation(answers);
