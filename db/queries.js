@@ -1,5 +1,7 @@
+const inquirer = require("inquirer");
 const db = require("../connection");
-const menuPrompt = require("../Prompts/locationPrompt")
+const locationPrompt = require("../Prompts/locationPrompt");
+const menuPrompt = require("../Prompts/menuPrompt");
 
 const showData = () => {
         db.query("SELECT * from employee", function (err, results){
@@ -15,7 +17,24 @@ const showLocation = (answers) => {
       
 }
 
+// Work in progress: Trying to see how we can ask the user if they wish to search again in another location, without having to restart the application.
+
+// const showMenu = () => {
+//     inquirer.prompt(menuPrompt)
+//     .then((answers) => {
+//         if(answers.mainMenu === "Yes"){
+//             console.log("Please search again")
+//             showLocation(answers);
+//         }
+//         console.log("The app has ended")
+//         return 0;
+        
+//     })
+
+// }
+
 
 
 
 module.exports = {showData, showLocation};
+// module.exports = {showMenu};
