@@ -16,6 +16,7 @@ const appMenu = () => {
                     if(answers !== ""){
                         return true;
                     }else if(!isNaN(answers)){
+                        console.log("LOOK OVER HERE: " + answers)
                         return true;
                     }
                     return "please enter a valid location"
