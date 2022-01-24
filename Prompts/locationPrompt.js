@@ -5,14 +5,13 @@ const locationPrompt = [{
     message:"Choose a location for your talent",
     // default:"Springfield",
     validate:(answers) => {
-        if(answers === ""){
-            return "Please put a valid name"
+        if(answers === "" || answers !== isNaN){
+            return "Please put a valid name, N.B cannot be empty or a number, strictly a string"
         }
         return true
     }
 
 
 }]
-
 
 module.exports = locationPrompt;

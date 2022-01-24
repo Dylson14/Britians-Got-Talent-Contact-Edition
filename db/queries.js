@@ -37,4 +37,3 @@ const showLocation = (answers) => {
 
 
 module.exports = {showData, showLocation};
-// module.exports = {showMenu};
