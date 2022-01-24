@@ -1,5 +1,5 @@
 const db = require("../connection");
-const menuPrompt = require("../Prompts/menuPrompt")
+const menuPrompt = require("../Prompts/locationPrompt")
 
 const showData = () => {
         db.query("SELECT * from employee", function (err, results){
@@ -14,6 +14,8 @@ const showLocation = (answers) => {
         })
       
 }
+
+
 
 
 module.exports = {showData, showLocation};
