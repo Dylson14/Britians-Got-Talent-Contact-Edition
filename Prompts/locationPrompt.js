@@ -5,10 +5,13 @@ const locationPrompt = [{
     message:"Choose a location for your talent",
     // default:"Springfield",
     validate:(answers) => {
-        if(answers === "" || answers !== isNaN){
-            return "Please put a valid name, N.B cannot be empty or a number, strictly a string"
+        if(answers === ""){
+            return "Please put a valid name, N.B cannot be empty"
+        }else if(!isNaN(answers)){
+            return "you cannot input a number"
+        }else{
+            return true
         }
-        return true
     }
 
 

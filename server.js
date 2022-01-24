@@ -9,6 +9,10 @@ const Start = () => {
     inquirer.prompt(locationPrompt)
     .then((answers) => {
 
+        let sentence = "  This is not the sentence you are looking for.   " 
+        let trimmed = sentence.trim();
+        console.log("1:" + sentence);
+        console.log("2:" + trimmed);
 
         // using trims and toLowerCase method.
 
