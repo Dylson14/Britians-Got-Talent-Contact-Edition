@@ -8,22 +8,23 @@ const {showData, showLocation} = require("./db/queries");
 const Start = () => {
     inquirer.prompt(locationPrompt)
     .then((answers) => {
+        // console.log("This is the first console log:" + JSON.stringify(answers.locationInput));
 
-        let sentence = "  This is not the sentence you are looking for.   " 
-        let trimmed = sentence.trim();
-        console.log("1:" + sentence);
-        console.log("2:" + trimmed);
-
-        // using trims and toLowerCase method.
-
-         console.log(`User wrote ${answers}`);
+        // let oldStringAnsw = JSON.stringify(answers.locationInput);
+        // console.log("This is old:" + oldStringAnsw);
+    
         // showData();   <-- Don't delete
          showLocation(answers); 
-
 
         // Take the user back to the main menu; a work in progress
         // showMenu(answers); <-- Don't delete
     })
+
+    // let sentence = "    This is a sentence."
+    // let trimmed = sentence.trim()
+
+    // console.log("1." + sentence);
+    // console.log("2." + trimmed);
 }
 
 Start();

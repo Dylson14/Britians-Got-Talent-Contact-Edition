@@ -10,6 +10,7 @@ const locationPrompt = [{
         }else if(!isNaN(answers)){
             return "you cannot input a number"
         }else{
+            answers.trim();
             return true
         }
     }
