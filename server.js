@@ -26,15 +26,15 @@ const Start = () => {
     // console.log("2." + trimmed);
 }
 
-// Start(); <-- don't delete
+Start(); 
 
-let word = "Springfield"
+// let word = "Springfield"
 
-var checkWord= SpellChecker.isMisspelled(word);
-console.log(checkWord);
+// var checkWord= SpellChecker.isMisspelled(word);
+// console.log(checkWord);
 
-var spellCheck = SpellChecker.getCorrectionsForMisspelling(word);
-console.log(spellCheck);
+// var spellCheck = SpellChecker.getCorrectionsForMisspelling(word);
+// console.log(spellCheck);
 
 
 
