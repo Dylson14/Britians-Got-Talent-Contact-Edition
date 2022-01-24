@@ -2,7 +2,7 @@ const inquirer = require("inquirer");
 const path = require("path");
 const fs = require("fs");
 const fastCSV = require("fast-csv"); 
-const db = require("./connection");
+const db = require("./config/connection");
 const ws = fs.createWriteStream("./dist/talentList.csv");
 
 const appMenu = () => {
@@ -35,11 +35,11 @@ const appMenu = () => {
             `SELECT * FROM employee WHERE location='${simplified}'`,
             function (err, results) {
             if(err){
-                console.log("couldn't find location, please try again")
+                console.log("couldn't find location, Make sure you got the right spelling")
                 showLocation()
                 return;
             }else if(results.length === 0) {
-                console.log("couldn't find location, please try again")
+                console.log("couldn't find location, Make sure you got the right spelling")
                 showLocation()
                 return;
             }    
