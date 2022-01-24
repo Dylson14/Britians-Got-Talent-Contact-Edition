@@ -3,15 +3,14 @@ const locationPrompt = require("./Prompts/locationPrompt");
 const menuPrompt = require("./Prompts/menuPrompt");
 const connectDB = require("./connection");
 const {showData, showLocation} = require("./db/queries");
+// Spell Checker
+SpellChecker = require ('spellchecker');
 
 // Start will be the only function called to make things simpler
 const Start = () => {
     inquirer.prompt(locationPrompt)
     .then((answers) => {
         // console.log("This is the first console log:" + JSON.stringify(answers.locationInput));
-
-        // let oldStringAnsw = JSON.stringify(answers.locationInput);
-        // console.log("This is old:" + oldStringAnsw);
     
         // showData();   <-- Don't delete
          showLocation(answers); 
@@ -27,4 +26,18 @@ const Start = () => {
     // console.log("2." + trimmed);
 }
 
-Start();
+// Start(); <-- don't delete
+
+let word = "Springfield"
+
+var checkWord= SpellChecker.isMisspelled(word);
+console.log(checkWord);
+
+var spellCheck = SpellChecker.getCorrectionsForMisspelling(word);
+console.log(spellCheck);
+
+
+
+
+
+

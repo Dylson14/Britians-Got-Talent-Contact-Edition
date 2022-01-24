@@ -11,6 +11,7 @@ const showData = () => {
 
 const showLocation = (answers) => {
         // console.log("We are in showLocation " + answers.locationInput);
+        
         db.query(`SELECT * FROM employee WHERE location='${answers.locationInput}'`, function (err, results){
             console.table(results);
         })
