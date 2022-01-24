@@ -34,18 +34,17 @@ const showLocation = (answers) => {
 
 // Work in progress: Trying to see how we can ask the user if they wish to search again in another location, without having to restart the application.
 
-// const showMenu = () => {
-//     inquirer.prompt(menuPrompt)
-//     .then((answers) => {
-//         if(answers.mainMenu === "Yes"){
-//             console.log("Please search again")
-//             showLocation(answers);
-//         }
-//         console.log("The app has ended")
-//         return 0;
+const showMenu = () => {
+    inquirer.prompt(menuPrompt)
+    .then((answers) => {
+        if(answers.mainMenu === "Yes"){
+            console.log("Please search again")
+        }
+        console.log("The app has ended")
+        return 0;
 
-//     })
+    })
 
-// }
+}
 
-module.exports = { showData, showLocation };
+module.exports = { showData, showLocation, showMenu };

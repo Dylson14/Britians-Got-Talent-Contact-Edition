@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -18,10 +18,12 @@
   },
   "homepage": "https://github.com/Dylson14/Britians-Got-Talent-Contact-Edition#readme",
   "dependencies": {
+    "fast-csv": "^4.3.6",
     "inquirer": "^8.2.0",
     "jest": "^27.4.7",
     "mysql2": "^2.3.3",
     "nodemon": "^2.0.15",
+    "path": "^0.12.7",
     "spellchecker": "^3.7.1",
     "typo-js": "^1.2.1"
   }
