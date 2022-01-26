@@ -1,6 +1,7 @@
 # Britians-Got-Talent-Contact-Edition
 
-This is the github repo for my technical assignment provided by Contact. 
+## About the app
+Technical Assignment for Contact
 
 BGT is an applcation focused on returning information from a hard-corded database, it implements validation for user input, SQL powered databasing, and is operared via the command-line powered using Node.js. Ultimately its designed to help retrieve information in a simple manner and create a csv file so that its user can easily export the data onto an excel file.
 
